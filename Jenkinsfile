@@ -15,7 +15,7 @@ pipeline {
 
         stage('Create Tomcat Docker Image'){
             steps {
-                sh "docker build . -t /var/lib/jenkins/workspace/Build-Tomcat-Docker-Image/target/dependency/:${env.BUILD_ID}"
+                sh "docker build . -t  cd /var/lib/jenkins/workspace/Build-Tomcat-Docker-Image/target/dependency/:${env.BUILD_ID}"
             }
         }
 
