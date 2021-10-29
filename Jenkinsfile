@@ -15,7 +15,7 @@ pipeline {
 
         stage('Create Tomcat Docker Image'){
             steps {
-                sh "docker build --tag devops ."
+                sh "docker pull hello-world"
             }
         }
 
