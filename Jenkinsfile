@@ -12,12 +12,5 @@ pipeline {
                 }
             }
         }
-
-        stage('Create Tomcat Docker Image'){
-            steps {
-                sh "docker pull hello-world"
-            }
-        }
-
     }
 }
